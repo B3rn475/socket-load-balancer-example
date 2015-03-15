@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.route('/route')
     .get(function (req, res) {
         res.json({
-            routes : {}
+            routes : router.getRoutes()
         });
     })
     .post(function (req, res) {
